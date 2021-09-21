@@ -1,0 +1,66 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.b-example-divider {
+    height: 3rem;
+    background-color: rgba(0, 0, 0, .1);
+    border: solid rgba(0, 0, 0, .15);
+    border-width: 1px 0;
+    box-shadow: inset 0 .5em 1.5em rgba(0, 0, 0, .1), inset 0 .125em .5em rgba(0, 0, 0, .15);
+  }
+  
+  .bi {
+    vertical-align: -.125em;
+    fill: currentColor;
+  }
+:root{
+    --background: rgb(4, 7, 10);
+    --text: white;
+    --highlight: rgb(83, 83, 83);
+}
+body{
+    background: var(--background);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    overflow: hidden;
+    transition: 0.5s background ease;
+}
+.theme-switch{
+    --background: rgb(255, 169, 169);
+    --text: rgb(92, 0, 0);
+    color: var(--text);
+    width: 70px;
+    height: 30px;
+    background: var(--highlight);
+    border-radius: 50px;
+    position: relative;
+}
+.theme-switch .switch{
+    background: white;
+    width: 24px;
+    height: 24px;
+    background: var(--background);
+    border-radius: 100%;
+    position: absolute;
+    top: 3px;
+    left: 4px;
+    transition: 0.5s all ease;
+}
+.light-theme{
+    --background: rgb(81, 149, 175);
+    --text: rgb(90, 0, 0);
+    background: var(--background);
+}
+.light-theme .theme-switch{
+    background: var(--text);
+}
+.light-theme .theme-switch .switch{
+    transform: translateX(37px);
+}
+.light-theme a{
+    color: var(--text);
+}
+
