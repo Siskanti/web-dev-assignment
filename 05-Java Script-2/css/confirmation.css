@@ -1,0 +1,58 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+
+}
+body{
+	background-image: url(https://marketplace.canva.com/EAD2962NKnQ/2/0/1600w/canva-rainbow-gradient-pink-and-purple-zoom-virtual-background-_Tcjok-d9b4.jpg);
+	height: 100%;
+	box-sizing: border-box;
+}
+h1{
+	margin: 25px;
+	text-align: center;
+	font-size: 4rem;
+	color: orange;
+}
+#input-item{
+	border: none;
+	border-radius: 50px;
+	text-align: center;
+	transition: .5s;
+	height: 60px;
+	width: 1050px;
+	margin: 0.25rem;
+	outline: none;
+	padding: 0.5rem 1 rem;
+	font-size: 1.15rem;
+
+}
+#btn-add-item{
+	border: none;
+	border-radius: 50px;
+	text-align: center;
+	transition: .5s;
+	height: 60px;
+	width: 200px;
+	background-color: MediumAquamarine;
+
+}
+.list{
+	display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 2rem;
+}
+.list-item{
+    
+    color: green;
+    font-size: 1.4rem;
+    font-family: 'Hind', sans-serif;
+    cursor: pointer;
+}
+.list-item p, button{
+	display: inline-block;
+}
